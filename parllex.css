@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"popins",sans-serif;
+}
+
+body,html{
+    height:100%;
+    margin:0;
+    font-size:18px;
+    font-family:"lato",sans-serif;
+font-weight: 400;
+line-height:1.8em;
+color:black;
+/* background-image: url(image8.jpg); */
+background: linear-gradient(#282e34,#000);
+background-size: cover;
+
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 32px;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.logo::before{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:0;
+    width:0;
+    height:3px;
+    background: black;
+    transition: .4s;
+}
+
+.logo:hover::before{
+    width:100%;
+}
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    color:black;
+    font-weight: 400;
+    text-decoration: none;
+    margin:20px;
+
+}
+
+.navbar a::before{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:0;
+    width:0;
+    height:2px;
+    background:black;
+    transition: .4s;
+}
+
+.navbar a:hover::before{
+    width:100%
+
+}
+
+.pic1,.pic3,.pic5,.pic7{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed ;
+}
+.pic1{
+    background-image: url(pisk.png);
+    min-height: 100%;
+}
+
+.pic3{
+    background-image: url(one.jpeg);
+    min-height: 400px;
+}
+
+.pic5{
+    background-image: url(two.jpeg);
+    min-height: 400px;
+}
+
+.pic7{
+    background-image: url(images7.jpg);
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section1{
+    background-color:#f4f4f4;
+    color:#666;
+
+}
+.section2{
+    background-color:#282e34;
+    color:#ddd;
+
+}
+.section3{
+    background-color:white;
+    color:#666;
+
+}
+.section4{
+    background-color:#282e34;
+    color:white;
+
+}
+
+.pic2{
+    position: absolute;
+    top: 50%;
+    width:100%;
+    text-align: center;
+    color:#000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.pic2 .border .trans{
+    background-color: transparent;
+    color:#fff;
+    padding:40px;
+}
+
+.pic2 .border{
+color: #000;
+}
